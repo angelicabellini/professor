@@ -5,10 +5,16 @@
  */
 package controlador;
 
+import tela.manutencao.ManutencaoProfessor;
+
 /**
  *
  * @author Administrador
  */
 public class ControladorProfessor {
+
+    public static void inserir(ManutencaoProfessor aThis) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
