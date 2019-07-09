@@ -35,12 +35,12 @@ public class ManutencaoProfessor extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jtffNome = new javax.swing.JTextField();
-        jtafNome = new javax.swing.JTextField();
         jtfNomefa = new javax.swing.JTextField();
         btnAlterar = new javax.swing.JButton();
         btnExcluir = new javax.swing.JButton();
         btnAdicionar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
 
         jTextField1.setText("jTextField1");
 
@@ -70,10 +70,21 @@ public class ManutencaoProfessor extends javax.swing.JFrame {
 
         btnCancelar.setText("Cancelar");
 
+        jTextField2.setText("jTextField2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jtfNomefa)
+                .addGap(5, 5, 5))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(89, 89, 89))
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(btnAdicionar)
@@ -84,29 +95,18 @@ public class ManutencaoProfessor extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnExcluir)
                 .addContainerGap(36, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
-                .addComponent(jtfNomefa)
-                .addGap(5, 5, 5))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel3)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jtffNome)
-                        .addGap(21, 21, 21))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jtafNome)
-                        .addGap(4, 4, 4))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(89, 89, 89))
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jtffNome)))
+                .addGap(21, 21, 21))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,7 +120,7 @@ public class ManutencaoProfessor extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jtafNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -182,15 +182,15 @@ public class ManutencaoProfessor extends javax.swing.JFrame {
     public javax.swing.JButton btnAlterar;
     public javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnExcluir;
-    private javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel5;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jtafNome;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jtfNome;
-    private javax.swing.JTextField jtfNomefa;
-    private javax.swing.JTextField jtffNome;
+    public javax.swing.JTextField jtfNomefa;
+    public javax.swing.JTextField jtffNome;
     // End of variables declaration//GEN-END:variables
 }
